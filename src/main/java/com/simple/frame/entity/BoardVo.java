@@ -9,25 +9,24 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import java.sql.Date;
-import java.time.LocalDateTime;
 
 @Entity
 @Getter
 @Setter
-public class MngrVo {
+public class BoardVo {
 
     @Id
     @GeneratedValue
-    private Long no;
+    private Long id;
 
     @Column
-    private String mngrId;
+    private String title;
 
     @Column
-    private String mngrPassWord;
+    private String content;
 
     @Column
-    private String mngrName;
+    private String name;
 
     @Column
     @JsonFormat(pattern = "yyyy-MM-dd")
